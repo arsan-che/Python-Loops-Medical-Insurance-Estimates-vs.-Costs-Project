@@ -31,6 +31,11 @@ for i in range(len(names)):
     # Check if the insurance cost is below average
     elif insurance_cost < average_cost:
         print("The insurance cost for " + name + " is below average.")
+        
+    # Check if the insurance cost is equal to the average
+    else:
+        print("The insurance cost for " + name + " is equal to the average.")
+
 
 # Create a new list of updated estimated costs, increasing each by 10%
 updated_estimated_costs = [i * 11 / 10 for i in estimated_insurance_costs]
@@ -38,6 +43,4 @@ updated_estimated_costs = [i * 11 / 10 for i in estimated_insurance_costs]
 # Print the updated estimated costs
 print(updated_estimated_costs)
     
-    # Check if the insurance cost is equal to the average
-    else:
-        print("The insurance cost for " + name + " is equal to the average.")
+    
