@@ -18,3 +18,20 @@ average_cost = total_cost / len(actual_insurance_costs)
 
 # Print the average insurance cost
 print(f'Average Insurance Cost: {average_cost} dollars.')
+# Iterate over each individual to compare their insurance cost to the average
+for i in range(len(names)):
+    name = names[i]
+    insurance_cost = actual_insurance_costs[i]
+    print("The insurance cost for " + name + " is " + str(insurance_cost) + " dollars.")
+    
+    # Check if the insurance cost is above average
+    if insurance_cost > average_cost:
+        print("The insurance cost for " + name + " is above average.")
+    
+    # Check if the insurance cost is below average
+    elif insurance_cost < average_cost:
+        print("The insurance cost for " + name + " is below average.")
+    
+    # Check if the insurance cost is equal to the average
+    else:
+        print("The insurance cost for " + name + " is equal to the average.")
